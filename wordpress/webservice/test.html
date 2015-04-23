@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Meteo</title>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      $.ajax({
+          dataType: "json",
+          url: 'http://localhost:8888/webservice/apis.php',
+          data:{},
+          cache:false,
+          success: function(datiricevuti)
+          {
+            console.log(datiricevuti);
+          }
+      });  
+
+    });
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.marquee {
+	width: 100%;
+	font-size: 4em;
+	overflow: hidden;
+	z-index: 1;
+	position:fixed;
+	bottom:0;
+	left:0; 
+	color:white;
+	padding: 15px 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
